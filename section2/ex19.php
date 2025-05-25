@@ -17,15 +17,25 @@
     }
 </style>
 <body>
+    <a href="ex18.php">Voltar para o exercicio anterior</a> <br>
      <a href="http://localhost/praticasPHP_N1/section2/">Voltar para a página inicial</a>
     <?php 
-        $idade = 18;
+        $cargo = "Desenvolvedor";
 
-        if ($idade >= 18){
-            echo "<h3>Acesso Liberado!</h3>";
+        $salario = 0;
+
+        if ($cargo == "Desenvolvedor") {
+            $salario = 3000;
+        } else if ($cargo == "Designer") {
+            $salario = 2500;
+        } else if ($cargo == "Gerente") {
+            $salario = 5000;
         } else {
-            echo "<h3>Acesso Negado!</h3>";
-        };
+            echo "<h3>Cargo não encontrado!</h3>";
+            exit();
+        }
+
+        echo "<h3>O salário do cargo de $cargo é R$ $salario</h3>";
     ?>
 
     

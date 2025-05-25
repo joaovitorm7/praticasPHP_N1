@@ -17,15 +17,21 @@
     }
 </style>
 <body>
+    <a href="ex14.php">Voltar para o exercicio anterior</a> <br>
      <a href="http://localhost/praticasPHP_N1/section2/">Voltar para a página inicial</a>
     <?php 
-        $idade = 18;
+        $bedida = "Suco";
 
-        if ($idade >= 18){
-            echo "<h3>Acesso Liberado!</h3>";
+        if ($bedida == "Café") {
+            echo "<h3>Você escolheu $bedida</h3>";
+        } elseif ($bedida == "Chá") {
+            echo "<h3>Você escolheu $bedida</h3>";
+        } elseif ($bedida == "Suco") {
+            echo "<h3>Você escolheu $bedida</h3>";
         } else {
-            echo "<h3>Acesso Negado!</h3>";
-        };
+            echo "<h3>Bebida não reconhecida!</h3>";
+        }
+        
     ?>
 
     

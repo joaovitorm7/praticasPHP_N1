@@ -17,15 +17,18 @@
     }
 </style>
 <body>
+    <a href="ex11.php">Voltar para o exercicio anterior</a> <br>
      <a href="http://localhost/praticasPHP_N1/section2/">Voltar para a página inicial</a>
     <?php 
-        $idade = 18;
+        $temperatura = 5;
 
-        if ($idade >= 18){
-            echo "<h3>Acesso Liberado!</h3>";
+        if($temperatura > 0) {
+            echo "<h3>Temperatura Positiva</h3>";
+        } else if($temperatura < 0) {
+            echo "<h3>Temperatura Negativa</h3>";
         } else {
-            echo "<h3>Acesso Negado!</h3>";
-        };
+            echo "<h3>Temperatura Igual a 0</h3>";
+        }
     ?>
 
     

@@ -17,15 +17,17 @@
     }
 </style>
 <body>
+    <a href="ex19.php">Voltar para o exercicio anterior</a> <br>
      <a href="http://localhost/praticasPHP_N1/section2/">Voltar para a página inicial</a>
     <?php 
-        $idade = 18;
+        $usuarioAtivo = true;
+        $usuarioAdmin = True;
 
-        if ($idade >= 18){
-            echo "<h3>Acesso Liberado!</h3>";
+        if ($usuarioAtivo && $usuarioAdmin) {
+            echo "<h3>Acesso total concedido!</h3>";
         } else {
             echo "<h3>Acesso Negado!</h3>";
-        };
+        }
     ?>
 
     

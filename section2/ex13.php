@@ -17,15 +17,20 @@
     }
 </style>
 <body>
+    <a href="ex12.php">Voltar para o exercicio anterior</a> <br>
      <a href="http://localhost/praticasPHP_N1/section2/">Voltar para a página inicial</a>
     <?php 
-        $idade = 18;
+        $nota1 = 8;
+        $nota2 = 8;
+        $media = ($nota1 + $nota2) / 2;
 
-        if ($idade >= 18){
-            echo "<h3>Acesso Liberado!</h3>";
+        if ($media >= 7) {
+            echo "<h3>Aprovado</h3>";
+        } else if ($media >= 5 and $media < 7) {
+            echo "<h3>Recuperação</h3>";
         } else {
-            echo "<h3>Acesso Negado!</h3>";
-        };
+            echo "<h3>Reprovado</h3>";
+        }
     ?>
 
     
